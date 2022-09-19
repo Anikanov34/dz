@@ -1,21 +1,30 @@
-﻿// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
-//дз
-
-Console.WriteLine("введите число");
+﻿// See https://aka.ms/new-console-template for more information
+// ДЗ 3
+Console.WriteLine("введите числа");
 int N = Convert.ToInt32(Console.ReadLine());
-int i = 1; 
-int ost = 0;
-while (i <= N)
+int N1 = Convert.ToInt32(Console.ReadLine());
+int N2 = Convert.ToInt32(Console.ReadLine());
+
+if (N >= N1)
 {
-   ost = i % 2;
-   if (ost==0)
+    if (N >=N2)
+    {
+           Console.Write($"{N} ,");
+    }else
+    {
+        Console.Write($"{N2} ,");
+
+    }
+} else
 {
-   Console.Write($"{i} ,");
-   i++;
-}
-else
-{
-   i++;
-}
+    if (N1>=N2)
+    {
+        Console.Write($"{N1} ,");
+
+    }    else
+    {
+                Console.Write($"{N2} ,");
+
+    }
 }
  

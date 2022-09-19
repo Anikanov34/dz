@@ -1,30 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-// ДЗ 3
-Console.WriteLine("введите числа");
-int N = Convert.ToInt32(Console.ReadLine());
-int N1 = Convert.ToInt32(Console.ReadLine());
-int N2 = Convert.ToInt32(Console.ReadLine());
+// ДЗ 6
+// Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-if (N >= N1)
-{
-    if (N >=N2)
-    {
-           Console.Write($"{N} ,");
-    }else
-    {
-        Console.Write($"{N2} ,");
+// 4 -> да
+// -3 -> нет
+// 7 -> нет
+Console.WriteLine("введите число");
+float N = Convert.ToInt32(Console.ReadLine());
 
-    }
-} else
-{
-    if (N1>=N2)
-    {
-        Console.Write($"{N1} ,");
-
-    }    else
-    {
-                Console.Write($"{N2} ,");
-
-    }
-}
- 
+Console.Write($"{((N/2)%1)==0}");
